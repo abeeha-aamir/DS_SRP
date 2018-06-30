@@ -29,10 +29,8 @@ z=0
 
 for x in text:
 	if x!=[]:
-		x2 = x.split()
-		for i in x2:
-			if i == entry:
-				listfreq[z] = listfreq[z] + 1
+		if entry in x:
+			listfreq[z] = listfreq[z] + 1
 
 	z = z + 1
 
