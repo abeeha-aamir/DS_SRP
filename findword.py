@@ -63,6 +63,8 @@ print list1,list2
 fig = plt.figure()
 ax = fig.add_subplot(111)
 plt.bar(list1, list2, color='g')
+plt.xlabel("Date")
+plt.ylabel("Frequency of query: " + str(entry))
 fig.autofmt_xdate()
 plt.show()
 
